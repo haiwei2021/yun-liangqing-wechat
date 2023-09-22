@@ -1,0 +1,20 @@
+.globalCalss{
+    position: fixed;
+
+    right: 10rpx;
+    bottom: 240rpx;
+    z-index: 2;
+     width: 80rpx ;
+        height: 80rpx;
+    background-color: #fff;
+    border:10rpx solid #999;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 80rpx;
+
+    .img{
+        width: 80rpx ;
+        height: 80rpx;
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,35 @@
+
+page{
+     background-color: #EBEBEB;
+}
+.warning{  
+    .listCard{
+        padding:5rpx  0rpx;
+
+        display: flex;
+        flex-wrap: wrap; //1父元素设置换行
+        justify-content: space-between;
+        .itemleft {
+			width: calc(calc(100% / 2) - 0rpx); //1子元素使用css calc函数，每行展示两个盒子
+			// height: 50px; 
+			box-sizing: border-box;
+			// border: 1px solid #000;
+			// display: flex; //2父元素flex 伸缩盒子布局
+			// flex-wrap: wrap;//2父元素设置换行
+
+            // margin-right: 1rpx;
+		}
+    }
+
+    .moer{
+        text-align: center;
+        width: 300rpx;
+        background-color: blue;
+        margin: 0 auto;
+        color: #fff;
+        height:60rpx;
+        line-height: 60rpx;
+        border-radius: 10rpx;
+        margin-bottom: 20rpx;
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "navigationBarTitleText": "库区实时监控",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "usingComponents": {
+        "selectWiget": "../../components/selectWiget/selectWiget",
+        "selectHandle": "../../components/selectHandle/selectHandle",
+        "radiosWiget": "../../components/radiosWiget/radiosWiget",
+        "van-popup": "@vant/weapp/popup/index",
+        "van-sticky": "@vant/weapp/sticky/index"
+    }
+}

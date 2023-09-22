@@ -1,0 +1,23 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/warning/warning",
+        "pages/store/store",
+        "pages/coldChain/coldChain",
+        "pages/my/my",
+        "pages/testPoint/testPoint",
+        "pages/listDetails/listDetails",
+        "pages/storeDetails/storeDetails"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+        "globalDialog": "./components/globalDialog/globalDialog"
+    }
+}

@@ -1,0 +1,40 @@
+.radiosWiget{
+    padding: 30rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    .title{
+        margin-bottom: 30rpx;
+    }
+    .t{
+         margin-top: 30rpx;
+    }
+
+    .buttonClass{
+        display: flex;
+        justify-content: center;
+        .reset{
+            width: 200rpx;
+            text-align: center;
+            border: 1rpx solid blue;
+            color: blue;
+            line-height: 50rpx;
+            height: 50rpx;
+            border-top-left-radius:10rpx;
+            border-bottom-left-radius:10rpx;
+        }
+        .determine{
+             width: 200rpx;
+            text-align: center;
+            background-color: blue;
+            color: #fff;
+             line-height: 50rpx;
+            height: 50rpx;
+             border: 1rpx solid blue;
+
+              border-top-right-radius:10rpx;
+            border-bottom-right-radius:10rpx;
+        }
+    }
+}

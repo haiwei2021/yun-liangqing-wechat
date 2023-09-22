@@ -1,0 +1,86 @@
+
+page{
+     background-color: #EBEBEB;
+}
+.storeDetails{
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        .block {
+            width: 100%;
+            // height: 120px;
+            background-color: #fff;
+            border-radius: 10rpx;
+            padding: 20rpx;
+            .imgBox{
+                text-align: right;
+                .img{
+                    width: 50rpx;
+                    height: 50rpx;
+                }
+            }
+            .listBox{
+                border-bottom: 1rpx solid #111;
+            }
+            .listBox_{
+                 margin-top: 20rpx;
+            }
+            .value{
+                display: flex;
+                .v{
+                    text-align: center;
+                    width: 50%;
+                    padding-bottom: 30rpx;
+                    text{
+                        display: block;
+                         margin-top: 10rpx;
+                    }
+                  
+                }
+               
+
+            }
+        }
+    }
+    .dataList{
+        margin: 30rpx;
+        .card{
+            background-color: #fff;
+            border-radius: 10rpx;
+            padding: 10rpx;
+            .value{
+                display: flex;
+                justify-content: space-between;
+                padding: 10rpx 0rpx;
+                border-bottom: 1rpx solid #999;
+                .left{
+                    display: flex;
+                }
+                .rigth{
+                    display: flex;
+                    align-items: center;
+                    .img{
+                        width: 50rpx;
+                        height: 30rpx;
+                    }
+                }
+            }
+            .value_{
+                display: flex;
+                text-align: center;
+                .t{
+                    width: 50%;
+                    .name{
+                        padding: 10rpx 0rpx;
+                    }
+                    .value1{
+                        padding-bottom: 15rpx;
+                    }
+                }
+            }
+        }
+    }
+}

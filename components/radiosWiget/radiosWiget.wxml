@@ -1,0 +1,28 @@
+<view class="radiosWiget">
+
+    <view>
+        <view class="title">
+            事件类型：
+        </view>
+        <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal" class="group">
+            <van-radio name="{{item.name}}" wx:for='{{envetList}}' wx:key='index'>{{item.text}}</van-radio>
+        </van-radio-group>
+        <view class="title t">
+            报警类型：
+        </view>
+        <van-radio-group value="{{ radioType }}" bind:change="onChange" direction="horizontal" class="group">
+            <van-radio name="{{item.name}}" wx:for='{{typeList}}' wx:key='index'>{{item.text}}</van-radio>
+        </van-radio-group>
+    </view>
+
+    <view class="buttonClass">
+        <view class="reset">
+            重置
+        </view>
+        <view class='determine'>
+            确定
+        </view>
+
+    </view>
+
+</view>

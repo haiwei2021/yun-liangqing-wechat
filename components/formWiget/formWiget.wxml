@@ -1,0 +1,50 @@
+<view class="formWiget">
+    <view class="text">
+        <view class="text_title">
+            仓库名称：北京某某某医药公司冷库（验证库）
+        </view>
+        <view class="text_title">
+            位置名称：M3上#1
+        </view>
+        <view class="text_title">
+            报警类型：温度（℃）
+        </view>
+        <view class="text_title">
+            持续时间：4小时5分
+        </view>
+
+
+    </view>
+
+    <view class="form">
+
+        <van-field label="原因分类：" data-name='reasonValue' value="{{ reasonValue }}" readonly='{{ true}}'
+            placeholder="请选择（必选）" border="{{ reasonValue!='其他'  }}" bind:change="onChange" required='{{true}}'
+            maxlength='10' bind:click-input='handleClickInput' bind:click-icon="onClickIcon" arrow-direction='down'
+            is-link='{{true}}' />
+        <van-field value="{{ other }}" data-name='other' label="  " placeholder="请输入信息" maxlength='10'
+            wx:if="{{reasonValue=='其他'}}" bind:change="onChange" border="{{ false }}" />
+        <van-field value="{{ warningValue }}" data-name='warningValue' label="报警原因：" required='{{true}}' maxlength='10'
+            placeholder="请输入报警原因（必填）" bind:change="onChange" border="{{ true }}" />
+        <van-field value="{{ handleValue }}" data-name='handleValue' label="处理方法：" required='{{true}}' maxlength='10'
+            placeholder="请输入处理方法（必填）" bind:change="onChange" border="{{ true }}" />
+
+
+        <van-field value="{{ remarksValue }}" data-name='remarksValue' label="备注信息：" placeholder="请输入备注信息"
+            maxlength='10' bind:change="onChange" border="{{ false }}" />
+
+
+    </view>
+
+    <view class="button" bindtap='handleSubmit'
+        style="background-color: {{reasonValue&&warningValue&&handleValue?'#2299EE':'#949494'}};">
+        提交
+    </view>
+
+    <van-popup show="{{ show }}" bind:close="onClose" custom-style="height: 35%;" position="bottom">
+        <van-picker confirm-button-text='确认' show-toolbar cancel-button-text='取消' columns="{{ columns }}"
+            bind:confirm='handleConfirm' bind:cancel='handleCancel' bind:change="onChange_picker" />
+    </van-popup>
+
+
+</view>

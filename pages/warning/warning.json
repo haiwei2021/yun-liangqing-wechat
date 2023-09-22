@@ -1,0 +1,14 @@
+{
+    "navigationBarTitleText": "报警实时监控",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "usingComponents": {
+        "selectWiget": "../../components/selectWiget/selectWiget",
+        "selectHandle": "../../components/selectHandle/selectHandle",
+        "card": "../../components/card/card",
+        "radiosWiget": "../../components/radiosWiget/radiosWiget",
+        "formWiget": "../../components/formWiget/formWiget",
+        "van-popup": "@vant/weapp/popup/index",
+        "van-sticky": "@vant/weapp/sticky/index"
+    }
+}

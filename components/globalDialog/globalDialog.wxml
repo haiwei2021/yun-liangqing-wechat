@@ -1,0 +1,3 @@
+<view class="globalCalss" hover-class="none" hover-stop-propagation="false">
+    <image class="img" src="../../image/store_a.png" bindtap='handletap' />
+</view>

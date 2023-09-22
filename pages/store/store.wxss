@@ -1,0 +1,34 @@
+page {
+  background-color: #EBEBEB;
+}
+
+.store .list {
+  margin: 30rpx;
+}
+
+.store .list .card {
+  padding: 20rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+
+.store .list .card .totlaValue {
+  border-bottom: 1rpx solid #111;
+  padding: 15rpx 0rpx;
+}
+
+.store .list .card .value {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20rpx;
+}
+
+.store .list .card .value .v .title_ {
+  font-weight: 700;
+}
+
+.store .list .card .value .v .w {
+  margin: 20rpx 0rpx;
+}

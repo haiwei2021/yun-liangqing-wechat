@@ -1,0 +1,98 @@
+page {
+  background-color: #EBEBEB;
+}
+
+.storeDetails .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.storeDetails .wrapper .block {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding: 20rpx;
+}
+
+.storeDetails .wrapper .block .imgBox {
+  text-align: right;
+}
+
+.storeDetails .wrapper .block .imgBox .img {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.storeDetails .wrapper .block .listBox {
+  border-bottom: 1rpx solid #111;
+}
+
+.storeDetails .wrapper .block .listBox_ {
+  margin-top: 20rpx;
+}
+
+.storeDetails .wrapper .block .value {
+  display: flex;
+}
+
+.storeDetails .wrapper .block .value .v {
+  text-align: center;
+  width: 50%;
+  padding-bottom: 30rpx;
+}
+
+.storeDetails .wrapper .block .value .v text {
+  display: block;
+  margin-top: 10rpx;
+}
+
+.storeDetails .dataList {
+  margin: 30rpx;
+}
+
+.storeDetails .dataList .card {
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding: 10rpx;
+}
+
+.storeDetails .dataList .card .value {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 0rpx;
+  border-bottom: 1rpx solid #999;
+}
+
+.storeDetails .dataList .card .value .left {
+  display: flex;
+}
+
+.storeDetails .dataList .card .value .rigth {
+  display: flex;
+  align-items: center;
+}
+
+.storeDetails .dataList .card .value .rigth .img {
+  width: 50rpx;
+  height: 30rpx;
+}
+
+.storeDetails .dataList .card .value_ {
+  display: flex;
+  text-align: center;
+}
+
+.storeDetails .dataList .card .value_ .t {
+  width: 50%;
+}
+
+.storeDetails .dataList .card .value_ .t .name {
+  padding: 10rpx 0rpx;
+}
+
+.storeDetails .dataList .card .value_ .t .value1 {
+  padding-bottom: 15rpx;
+}

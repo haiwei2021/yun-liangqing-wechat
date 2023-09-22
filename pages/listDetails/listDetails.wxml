@@ -1,0 +1,201 @@
+<!--logs.wxml-->
+<globalDialog />
+<view class="listDetails1">
+
+    <view class="box">
+
+        <view class="titleBox  vvi">
+            <view class="vvv">
+                粮情总览
+            </view>
+
+            <view style="display: flex;  justify-content: space-between;align-items: center;">
+
+                <view>
+                    时间点
+                </view>
+                <van-dropdown-menu z-index='999'>
+                    <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" bind:open='handleOpen'
+                        bind:close='handleClose' bind:change="onSwitch1Change" />
+
+                </van-dropdown-menu>
+            </view>
+
+
+        </view>
+
+
+        <view class="value">
+            <view class="v">
+                <view>
+                    粮均温
+                </view>
+                <view class="vv">
+                    {{item.allAverageVal}}℃
+                </view>
+            </view>
+            <view class="v">
+                <view>
+                    粮高温
+                </view>
+                <view class="vv">
+                    {{item.allMaxVal}}℃
+                </view>
+            </view>
+            <view class="v">
+                <view>
+                    粮低温
+                </view>
+                <view class="vv">
+                    {{item.allMinVal}}℃
+                </view>
+            </view>
+
+        </view>
+        <view class="value">
+            <view class="v1   vvv">
+                <view class="vvvv">
+                    <view>
+                        仓内温
+                    </view>
+                    <view class="vv">
+                        {{item.houseTem}}℃
+                    </view>
+                </view>
+
+                <view class="vvvv">
+                    <view>
+                        仓内湿
+                    </view>
+                    <view class="vv">
+                        {{item.houseHum}}%
+                    </view>
+                </view>
+            </view>
+            <view class="v1">
+                <view class="vvvv">
+                    <view>
+                        仓外温
+                    </view>
+                    <view class="vv">
+                        {{item.windTem}}℃
+                    </view>
+                </view>
+
+                <view class="vvvv">
+                    <view>
+                        仓外湿
+                    </view>
+                    <view class="vv">
+                        {{item.windHum}}%
+                    </view>
+                </view>
+            </view>
+
+
+        </view>
+
+        <view class="itme">
+            采集时间：{{item.createStamp}}
+        </view>
+
+
+
+
+    </view>
+
+    <view class="box marginTop">
+        <view class="titleBox">
+            各层粮情信息
+        </view>
+        <view class="tebleClor">
+            <view class="tableBox">
+                <view style="color: #0D0D11; font-weight: 700;">
+                    显示控制
+                </view>
+                <view style="color: #EAB44A; font-weight: 700;">
+                    平均值
+                </view>
+                <view style=" font-weight: 700;color: #EE221C">
+                    最高温
+                </view>
+                <view style=" font-weight: 700;color: #265CA4">
+                    最低温
+                </view>
+            </view>
+
+            <view class="tableBox" wx:for='{{item.layerTmpList}}' wx:key='index1' wx:for-item="items"
+                wx:for-index="index1">
+                <view style="color: #0D0D11;">
+                    {{index1+1}}层
+                </view>
+                <view style="color: #EAB44A">
+                    {{items.averageVal}}℃
+                </view>
+                <view style="color: #EE221C">
+                    {{items.maxVal}}℃
+                </view>
+                <view style="color: #265CA4">
+                    {{items.minVal}}℃
+                </view>
+            </view>
+        </view>
+
+    </view>
+
+
+    <view class="box marginTop">
+        <view class="titleBox">
+            详细粮情
+        </view>
+    </view>
+
+    <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%" enable-flex='{{true}}'>
+        <view class="t_" wx:for='{{item.rowList}}' wx:key='ii' wx:for-item="i" wx:for-index="ii">
+            <view class="left11">
+                {{i.rowName}}
+            </view>
+            <view class="rigth">
+                <view class="title  ni" wx:if='{{ii==0}}' wx:for='{{i.childList}}' wx:key='iii' wx:for-item="i_item"
+                    wx:for-index="iii">
+                    <view class="one" wx:if='{{iii==0}}'>
+                        序号
+                    </view>
+                    <view class="two" wx:if='{{iii==0}}' wx:for='{{i_item.layerList}}' wx:key='k' wx:for-item="i_k"
+                        wx:for-index="k">
+                        第{{k+1}}层
+                    </view>
+                </view>
+
+
+                <view class="rr title" style="display: flex;" wx:for='{{i.childList}}' wx:key='iii' wx:for-item="i_item"
+                    wx:for-index="iii">
+                    <view class="one">
+                        {{i_item.index}}
+                    </view>
+
+                    <view class="two" style="color:{{i_k-0>item.temAlarm || i_k-0<0 ? 'red' : ''}}" wx:for='{{i_item.layerList}}'
+                        wx:key='k' wx:for-item="i_k" wx:for-index="k">
+                        {{i_k}}
+                    </view>
+                </view>
+                <!-- 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111letftr -->
+            </view>
+        </view>
+
+
+    </scroll-view>
+
+    <view class="button">
+        <van-button color="#9A5BD6" bindtap='handleClick_l'>报表下载</van-button>
+        <van-button color="#658DC1" class="buttonv" bindtap='handleClick_listDetails' data-data="{{ dataItem.houseId}}">
+            三维图</van-button>
+
+
+
+
+    </view>
+
+
+
+</view>

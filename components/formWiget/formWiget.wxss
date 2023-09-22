@@ -1,0 +1,28 @@
+.formWiget {
+  padding: 40rpx;
+}
+
+.formWiget .form {
+  border: 2rpx solid #999999;
+  border-radius: 10rpx;
+  padding: 10rpx;
+}
+
+.formWiget .text {
+  padding: 20rpx 5rpx;
+}
+
+.formWiget .text .text_title {
+  margin-top: 5rpx;
+}
+
+.formWiget .button {
+  margin: 0  auto;
+  margin-top: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #fff;
+  width: 300rpx;
+  border-radius: 20rpx;
+  text-align: center;
+}

@@ -1,0 +1,32 @@
+<view class="selectBox">
+    <view class="selectBox_left imgBox" bindtap='handleSelect' data-type='time' data-value='{{type}}'
+        wx:if='{{typeName === "warning"}}'>
+        发生时间
+        <image class="img" src="../../image/top.png" wx:if='{{type}}' />
+        <image class="img" src="../../image/bottom.png" wx:else />
+    </view>
+
+    <view class="selectBox_left imgBox" bindtap='handleSelect' data-type='tips' data-value='tips'
+        wx:elif='{{typeName === "storeDetails"}}'>
+
+        <image class="img" src="../../image/tips.png" />
+        状态说明
+
+    </view>
+    <view wx:else>
+        <!-- 站位容器 -->
+    </view>
+
+    <view class="selectBox_rigth">
+
+        <view class="refresh imgBox" bindtap='handleSelect' data-type='refresh'>
+            刷新
+            <image class="img" src="../../image/refresh.png" />
+        </view>
+
+        <view class=" imgBox" bindtap='handleSelect' data-type='select' data-value='right'>
+            筛选
+            <image class="img" src="../../image/select.png" />
+        </view>
+    </view>
+</view>

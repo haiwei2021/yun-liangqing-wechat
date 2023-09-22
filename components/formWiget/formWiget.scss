@@ -1,0 +1,27 @@
+.formWiget{
+    padding: 40rpx;
+    .form{
+        border:2rpx solid #999999;
+        border-radius: 10rpx;
+        padding: 10rpx;
+
+      
+    }
+    .text{
+        padding: 20rpx 5rpx;
+        .text_title{
+            margin-top: 5rpx;
+        }
+    }
+    .button{
+        margin:  0  auto;
+        margin-top: 50rpx;
+        height: 50rpx ;
+        line-height: 50rpx;
+        // background-color: #999;
+        color: #fff;
+        width: 300rpx;
+        border-radius: 20rpx;
+        text-align: center;
+    }
+}

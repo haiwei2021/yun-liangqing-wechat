@@ -1,0 +1,76 @@
+<!--logs.wxml-->
+<view class="store">
+    <van-sticky>
+        <selectWiget bind:getSelectValue='getSelectValue' typeName='store' />
+        <selectHandle bind:handleSelect='handleSelect' typeName='store' />
+    </van-sticky>
+
+
+    <view class="list">
+        <view class="card" wx:for='{{10}}' data-item="{{item}}" bindtap='handleColick'>
+            <view>
+                北京中科药业一楼01号冷库
+            </view>
+            <view class="totlaValue">
+                监测点：4个
+            </view>
+
+            <view class='value'>
+                <view class="v">
+                    <view class="title_">
+                        温度（℃）
+                    </view>
+                    <view class="w">
+                        <text style="color:yellow">预警：</text>
+                        <text>2</text>
+                    </view>
+                    <view class="e">
+                        <text style="color: red;">报警：</text>
+                        <text>12</text>
+                    </view>
+                </view>
+
+                <view class="v">
+                    <view class="title_">
+                        湿度（RH%）
+                    </view>
+                    <view class="w">
+                        <text style="color:yellow">预警：</text>
+                        <text>2</text>
+                    </view>
+                    <view class="e">
+                        <text style="color: red;">报警：</text>
+                        <text>2</text>
+                    </view>
+                </view>
+
+
+                <view class="v">
+                    <view class="title_">
+                        监测设备
+                    </view>
+                    <view class="w">
+                        <text>离线：</text>
+                        <text>2</text>
+                    </view>
+                    <view class="e">
+                        <text>低电：</text>
+                        <text>2</text>
+                    </view>
+                </view>
+
+            </view>
+
+        </view>
+
+    </view>
+    <!-- close-on-click-overlay	是否在点击遮罩层后关闭	boolean	true -->
+    <!-- closeable 是否显示关闭图标 boolean false -->
+    <!-- overlay-style	自定义遮罩层样式	string	'' -->
+    <van-popup show="{{ show }}" position="right" lock-scroll close-on-click-overlay='{{true}}'
+        custom-style="height:100%" bind:close="onClose">
+        <radiosWiget />
+
+    </van-popup>
+
+</view>

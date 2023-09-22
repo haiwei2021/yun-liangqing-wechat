@@ -1,0 +1,94 @@
+.listDetails .button {
+  text-align: center;
+  background-color: blue;
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 100%;
+  color: #fff;
+  position: fixed;
+  bottom: 0rpx;
+  z-index: 10;
+}
+
+.listDetails .details {
+  padding: 20rpx 50rpx;
+}
+
+.listDetails .details .text {
+  padding-bottom: 20rpx;
+}
+
+.listDetails .details .text_history {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.listDetails .details .text_history .text_ {
+  width: 150rpx;
+  text-align: center;
+  color: #9999B2;
+}
+
+.listDetails .details .text_history .solid {
+  height: 1rpx;
+  background-color: #9999B2;
+  flex: 1;
+}
+
+.listDetails .details .text_time {
+  display: flex;
+}
+
+.listDetails .details .tips {
+  margin-top: 20rpx;
+  text-align: center;
+  color: #9999B2;
+  padding-bottom: 20rpx;
+}
+
+.listDetails .details .tebleClass {
+  margin-bottom: 120rpx;
+}
+
+.listDetails .details .tebleClass .tebleClass_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #9999B2;
+  border-top: 1rpx solid #9999B2;
+  padding: 20rpx 0rpx;
+}
+
+.listDetails .details .tebleClass .tebleClass_title .v {
+  text-align: center;
+  width: 150rpx;
+}
+
+.listDetails .details .tebleClass .tebleClass_title .type {
+  background-color: red;
+  border-radius: 10rpx;
+  color: #fff;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.listDetails .details .tebleClass .tebleClass_title .vv {
+  text-align: center;
+  flex: 1;
+}
+
+.listDetails .details .tebleClass .tebleClass_title .o {
+  text-align: center;
+  width: 230rpx;
+  border-left: 1rpx solid #9999B2;
+  border-right: 1rpx solid #9999B2;
+}
+
+.listDetails .details .tebleClass .tebleClass_title .oo {
+  border: none;
+}
+
+.listDetails .details .tebleClass .t {
+  border-top: none;
+}

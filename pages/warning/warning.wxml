@@ -1,0 +1,33 @@
+<!--logs.wxml-->
+<view class="warning">
+    <!-- <van-sticky>
+        <selectWiget bind:getSelectValue='getSelectValue' typeName='warning' />
+
+        <selectHandle bind:handleSelect='handleSelect' typeName='warning' />
+
+
+    </van-sticky> -->
+
+
+    <globalDialog />
+    <view class="listCard">
+        <card bindstartHandle='startHandle' class="itemleft" wx:for='{{list}}' wx:key='index' data-item="{{item}}"
+            item='{{item}}' />
+    </view>
+
+
+    <!-- <view class="moer">
+        加载更多
+    </view> -->
+    <!-- close-on-click-overlay	是否在点击遮罩层后关闭	boolean	true -->
+    <!-- closeable 是否显示关闭图标 boolean false -->
+    <!-- overlay-style	自定义遮罩层样式	string	'' -->
+
+    <!-- <van-popup show="{{ show }}" position="{{showType}}" lock-scroll close-on-click-overlay='{{showType=="right"}}'
+        closeable='{{showType=="bottom"}}' custom-style="{{showType=='right'?'height:100%':'height:70%'}}"
+        bind:close="onClose">
+        <radiosWiget wx:if='{{showType=="right"}}' />
+        <formWiget wx:if='{{showType=="bottom"}}' />
+    </van-popup> -->
+
+</view>

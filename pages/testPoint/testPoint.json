@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "测点详情",
+    "usingComponents": {
+        "listDetails": "../../components/listDetails/listDetails",
+        "van-tab": "@vant/weapp/tab/index",
+        "van-tabs": "@vant/weapp/tabs/index",
+        "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+        "van-dropdown-item": "@vant/weapp/dropdown-item/index"
+    }
+}

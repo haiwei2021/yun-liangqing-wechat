@@ -1,0 +1,143 @@
+page {
+  background-color: #EBEBEB;
+}
+
+.listDetails1 {
+  padding: 0rpx 20rpx;
+}
+
+.listDetails1 .marginTop {
+  margin-top: 10rpx;
+}
+
+.listDetails1 .box {
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+
+.listDetails1 .box .vvi {
+  display: flex;
+}
+
+.listDetails1 .box .titleBox {
+  border-bottom: 1rpx solid #EBEBEB;
+  color: #265CA6;
+  padding: 15rpx;
+  font-weight: 700;
+  font-size: 32rpx;
+}
+
+.listDetails1 .box .titleBox .vvv {
+  margin-right: 20rpx;
+}
+
+.listDetails1 .box .titleBox .van-dropdown-menu {
+  height: 0rpx;
+}
+
+.listDetails1 .box .value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #EBEBEB;
+}
+
+.listDetails1 .box .value .v {
+  width: 33%;
+  text-align: center;
+  padding: 15rpx 0rpx;
+}
+
+.listDetails1 .box .value .v .vv {
+  font-weight: 700;
+}
+
+.listDetails1 .box .value .vvv {
+  border-right: 1rpx solid #EBEBEB;
+}
+
+.listDetails1 .box .value .v1 {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 50rpx;
+}
+
+.listDetails1 .box .value .v1 .vvvv .vv {
+  font-weight: 700;
+}
+
+.listDetails1 .box .itme {
+  padding: 20rpx;
+}
+
+.listDetails1 .box .tebleClor .tableBox {
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #EBEBEB;
+  font-size: 25rpx;
+}
+
+.listDetails1 .box .tebleClor .tableBox view {
+  flex: 1;
+  text-align: center;
+}
+
+.listDetails1 .button {
+  text-align: center;
+  padding: 60rpx;
+}
+
+.listDetails1 .button .buttonv {
+  margin-right: 50rpx;
+  margin-left: 50rpx;
+}
+
+.listDetails1 .scroll-view_H {
+  background-color: #fff;
+  width: 100%;
+}
+
+.listDetails1 .scroll-view_H .t_ {
+  display: flex;
+  width: 100%;
+  font-size: 25rpx;
+}
+
+.listDetails1 .scroll-view_H .t_ .left11 {
+  text-align: center;
+  min-width: 70rpx;
+  padding-top: 25%;
+  border-bottom: 1rpx solid #999;
+}
+
+.listDetails1 .scroll-view_H .t_ .rigth {
+  width: 1000px;
+  border-bottom: 1rpx solid #999;
+  padding-top: 10rpx;
+}
+
+.listDetails1 .scroll-view_H .t_ .rigth .rr {
+  margin-bottom: 30rpx;
+}
+
+.listDetails1 .scroll-view_H .t_ .rigth .ni {
+  margin-bottom: 5rpx;
+}
+
+.listDetails1 .scroll-view_H .t_ .rigth .title {
+  display: flex;
+}
+
+.listDetails1 .scroll-view_H .t_ .rigth .title .one {
+  width: 100rpx;
+  margin-right: 20rpx;
+  text-align: center;
+}
+
+.listDetails1 .scroll-view_H .t_ .rigth .title .two {
+  width: 100rpx;
+  margin-right: 20rpx;
+  text-align: center;
+}

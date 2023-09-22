@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<van-notify id="van-notify" />
+<view class="index">
+    <view class="imgBox">
+        <image class="img" src="../../image/home.png" />
+    </view>
+
+    <view class="inputBox">
+        <image class="img" src="../../image/user.png" />
+        <van-field value="{{ user }}" placeholder="请输入用户名" border="{{ false }}" bind:change="onChangeUser" />
+    </view>
+
+    <view class="inputBox">
+        <image class="img" src="../../image/password.png" />
+        <van-field value="{{ password }}" password='{{true}}' placeholder="请输入密码" border="{{ false }}"
+            bind:change="onChangePassword" />
+    </view>
+
+    <!-- <view class="checkbox">
+        <van-checkbox value="{{ checked }}" shape="square" bind:change="onChange">
+            记住密码
+        </van-checkbox>
+    </view> -->
+
+    <view class="buttonBox" style="background-color: {{userName&&password?'#2299EE':'#949494'}};" bindtap='handleLog'
+        data-type="login">
+        登录
+    </view>
+
+
+
+    <!-- <view class="tipsBox">
+
+        <image class="img" src="../../image/tips.png" />
+        <view class="tips">
+            请使用监测平台帐号登录
+        </view>
+    </view> -->
+</view>

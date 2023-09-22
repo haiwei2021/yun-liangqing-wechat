@@ -1,0 +1,90 @@
+.listDetails{
+   
+
+    .button{
+        text-align: center;
+        background-color: blue;
+        height: 100rpx;
+        line-height: 100rpx;
+        width: 100%;
+        color: #fff;
+        position:fixed;
+        bottom: 0rpx;
+        z-index: 10;
+    }
+
+    .details{
+        padding: 20rpx 50rpx;
+        .text{
+            padding-bottom: 20rpx;
+        }
+        .text_history{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20rpx;
+            .text_{
+                width: 150rpx;
+                text-align: center;
+                color: #9999B2;
+            }
+            .solid{
+                height: 1rpx;
+                background-color: #9999B2;
+                flex: 1;
+            }
+
+        }
+        .text_time{
+            display: flex;
+        }
+        .tips{
+            margin-top: 20rpx;
+            text-align: center;
+            color: #9999B2;
+            padding-bottom: 20rpx;
+            // border-bottom: 1rpx solid #9999B2;
+        }
+
+        .tebleClass{
+            margin-bottom: 120rpx;
+            
+            .tebleClass_title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1rpx solid #9999B2;
+                border-top: 1rpx solid #9999B2;
+                padding: 20rpx 0rpx;
+                .v{
+                    
+                    text-align: center;
+                    width: 150rpx;
+                }
+                .type{
+                    background-color: red;
+                    border-radius: 10rpx;
+                    color: #fff;
+                    height: 50rpx;
+                    line-height: 50rpx;
+                }
+                .vv{
+                    
+                    text-align: center;
+                    flex: 1;
+                }
+                .o{
+                    text-align: center;
+                    width: 230rpx;
+                    border-left: 1rpx solid #9999B2;
+                    border-right: 1rpx solid #9999B2;
+                }
+                .oo{
+                    border:none
+                }
+            }
+            .t{
+               border-top: none; 
+            }
+        }
+    }
+}

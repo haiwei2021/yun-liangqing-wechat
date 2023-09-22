@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "van-notify": "@vant/weapp/notify/index",
+        "van-checkbox": "@vant/weapp/checkbox/index",
+        "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+        "van-field": "@vant/weapp/field/index"
+    },
+    "navigationBarTitleText": "温湿度自动监测系统"
+}

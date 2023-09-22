@@ -1,0 +1,27 @@
+page {
+  background-color: #EBEBEB;
+}
+
+.warning .listCard {
+  padding: 5rpx  0rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.warning .listCard .itemleft {
+  width: calc(calc(100% / 2) - 0rpx);
+  box-sizing: border-box;
+}
+
+.warning .moer {
+  text-align: center;
+  width: 300rpx;
+  background-color: blue;
+  margin: 0 auto;
+  color: #fff;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}

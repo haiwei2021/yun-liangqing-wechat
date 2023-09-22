@@ -1,0 +1,8 @@
+<view class="selectWiget">
+    <van-dropdown-menu wx:if='{{typeName === "warning"}}'>
+        <van-dropdown-item value="{{ value1 }}" id="{{value1}}" options="{{ option1 }}" bind:change='handleChange' />
+    </van-dropdown-menu>
+
+    <van-search value="{{ value }}" shape="round" background="blue" placeholder="请输入搜索关键词" bind:search="onSearch"
+        wx:if='{{value1=="1"}}' />
+</view>

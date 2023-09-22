@@ -1,0 +1,26 @@
+.selectBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 18rpx;
+  background-color: #fff;
+}
+
+.selectBox .selectBox_rigth {
+  display: flex;
+}
+
+.selectBox .refresh {
+  margin-right: 40rpx;
+}
+
+.selectBox .imgBox {
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+.selectBox .imgBox .img {
+  margin-left: 10rpx;
+  width: 35rpx;
+  height: 35rpx;
+}

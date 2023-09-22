@@ -1,0 +1,12 @@
+<view class="qiun-charts">
+    <van-dropdown-menu z-index='999'>
+        <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" bind:open='handleOpen' bind:close='handleClose'
+            bind:change="onSwitch1Change" />
+
+    </van-dropdown-menu>
+    <canvas canvas-id="canvasLineA" id="canvasLineA" class="charts" bindtouchstart="touchLineA"
+        bindtouchmove="moveLineA" bindtouchend="touchEndLineA" hidden='{{typeHidden}}'></canvas>
+
+    <globalDialog />
+
+</view>

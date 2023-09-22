@@ -1,0 +1,36 @@
+
+page{
+     background-color: #EBEBEB;
+}
+.store{
+
+    .list{
+        margin: 30rpx;
+        .card{
+            padding: 20rpx;
+            border-radius: 10rpx;
+            background-color: #fff;
+            margin-bottom: 20rpx;
+            .totlaValue{
+                border-bottom: 1rpx solid #111;
+                padding: 15rpx 0rpx;
+            }
+            .value{
+                margin-top: 20rpx;
+                display: flex;
+                justify-content: space-between;
+                padding-right: 20rpx;
+                .v{
+                    // text-align: center;
+                    .title_{
+                        font-weight: 700;
+                    }
+                    .w{
+                        margin: 20rpx 0rpx;
+                    }
+                }
+               
+            }
+        }
+    }
+}

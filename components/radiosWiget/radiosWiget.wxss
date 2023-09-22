@@ -1,0 +1,43 @@
+.radiosWiget {
+  padding: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+
+.radiosWiget .title {
+  margin-bottom: 30rpx;
+}
+
+.radiosWiget .t {
+  margin-top: 30rpx;
+}
+
+.radiosWiget .buttonClass {
+  display: flex;
+  justify-content: center;
+}
+
+.radiosWiget .buttonClass .reset {
+  width: 200rpx;
+  text-align: center;
+  border: 1rpx solid blue;
+  color: blue;
+  line-height: 50rpx;
+  height: 50rpx;
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+}
+
+.radiosWiget .buttonClass .determine {
+  width: 200rpx;
+  text-align: center;
+  background-color: blue;
+  color: #fff;
+  line-height: 50rpx;
+  height: 50rpx;
+  border: 1rpx solid blue;
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}

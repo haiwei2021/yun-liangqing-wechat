@@ -1,0 +1,104 @@
+<!--logs.wxml-->
+<view class="storeDetails">
+    <van-sticky>
+        <selectWiget bind:getSelectValue='getSelectValue' typeName='warning' />
+        <selectHandle bind:handleSelect='handleSelect' typeName='storeDetails' />
+    </van-sticky>
+
+    <view class="dataList">
+        <view class="card" bindtap="onClickItme" data-type="T">
+            <view class="title">
+                3号冷库3号测点的3号冷库3
+            </view>
+
+            <view class="value">
+                <view class="left">
+                    <view class="view_">
+                        2017-10-07 12:04:15
+                    </view>
+                    <van-tag color="#999" text-color="#fff" size='large'>离线</van-tag>
+                </view>
+                <view class="rigth">
+                    <!-- <image class="img" src="../../image/battery1.png" />
+                    <image class="img" src="../../image/battery2.png" />
+                    <image class="img" src="../../image/battery3.png" />
+                    <image class="img" src="../../image/battery4.png" />
+                    <image class="img" src="../../image/battery5.png" /> -->
+                    <image class="img" src="../../image/battery6.png" />
+                    <view class="">
+                        100%
+                    </view>
+
+
+                </view>
+
+            </view>
+
+            <view class="value_">
+                <view class="t">
+                    <view class="name">
+                        实时温度
+                    </view>
+                    <view class="value1">
+                        9.8℃
+                    </view>
+
+                </view>
+                <view class="t" catch:tap="onClickItme" data-type="H">
+                    <view class="name">
+                        实时温度
+                    </view>
+                    <view class="value1">
+                        82.5%
+                    </view>
+
+                </view>
+            </view>
+
+
+
+        </view>
+
+    </view>
+
+
+    <!-- close-on-click-overlay	是否在点击遮罩层后关闭	boolean	true -->
+    <!-- closeable 是否显示关闭图标 boolean false -->
+    <!-- overlay-style	自定义遮罩层样式	string	'' -->
+    <van-popup show="{{ show }}" position="right" lock-scroll close-on-click-overlay='{{true}}'
+        custom-style="height:100%" bind:close="onClose">
+        <radiosWiget />
+    </van-popup>
+
+
+    <van-overlay show="{{ showOverlay }}" bind:click="onClickHide" z-index='99'>
+        <view class="wrapper">
+            <view class="block">
+                <view class="imgBox" catch:tap="handleNoop">
+                    <image class="img" src="../../image/close.png" />
+                </view>
+
+
+                <view class="{{index!=0?'listBox_':''}} {{showOverlayList.length-1==index?'':'listBox'}}"
+                    wx:for='{{showOverlayList}}' wx:key='index'>
+                    <view>
+                        <van-tag type="primary" size='large'>标签</van-tag>
+                        温湿度值处于正常范围内
+                    </view>
+                    <view class="value">
+                        <view class="v">
+                            <text>实时温度</text>
+                            <text class="text">3.8℃</text>
+                        </view>
+                        <view class="v t">
+                            <text>实时湿度</text>
+                            <text class="text">55.1%</text>
+                        </view>
+                    </view>
+
+                </view>
+
+            </view>
+        </view>
+    </van-overlay>
+</view>

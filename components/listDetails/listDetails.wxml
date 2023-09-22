@@ -1,0 +1,98 @@
+<!--logs.wxml-->
+<view class="listDetails">
+
+    <view class="details">
+        <view class="textBox" wx:if='{{typeName == "listDetails"}}'>
+            <view class="text">
+                仓库名称：一号楼2号冷库
+            </view>
+            <view class="text">
+                位置名称：2号冷库02号测点
+            </view>
+            <view class="text">
+                报警类型：温度（℃）
+            </view>
+            <view class="text">
+                开始时间：2021-09-24 16:33
+            </view>
+            <view class="text">
+                持续时间：4天4小时1分
+            </view>
+
+            <view class="text_history">
+                <view class="solid">
+
+                </view>
+                <view class="text_">
+                    历史数据
+                </view>
+                <view class="solid">
+
+                </view>
+
+            </view>
+
+        </view>
+
+        <view class="text">
+            时间范围：最近24小时
+        </view>
+
+        <view class="text_time">
+            <view>
+                显示间隔：
+            </view>
+            <view>
+                <view>
+                    正常 30分钟/条
+                </view>
+                <view>
+                    报警 2分钟/条
+                </view>
+            </view>
+        </view>
+
+        <view class="tips">
+            更多数据查询请使用电脑访问监测系统
+        </view>
+
+
+
+
+
+        <view class="tebleClass">
+            <view class="tebleClass_title">
+                <view class="vv">
+                    记录时间
+                </view>
+                <view class="o">
+                    温度值（℃）
+                </view>
+                <view class="v">
+                    状态
+                </view>
+            </view>
+
+            <view class="tebleClass_title t" wx:for='{{100}}'>
+                <view class="vv">
+                    2017-10-12 03:36
+                </view>
+                <view class="o oo">
+                    9.2{{index}}
+                </view>
+                <view class="v type" bindtap='handleClick' data-item="{{item}}" data-clickType="item">
+                    报警
+                </view>
+
+            </view>
+
+
+        </view>
+
+
+    </view>
+    <view class="button" bindtap='handleClick' data-clickType="button" wx:if='{{typeName == "listDetails"}}'>
+        开始处理
+    </view>
+
+</view>

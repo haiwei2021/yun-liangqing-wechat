@@ -1,0 +1,141 @@
+
+page{
+     background-color: #EBEBEB;
+}
+.listDetails1{
+    padding: 0rpx 20rpx ;
+    
+    .marginTop {
+        margin-top: 10rpx;
+    }
+    .box{
+        background-color: #fff;
+        border-radius: 10rpx;
+        .vvi{
+            display: flex;
+        }
+        .titleBox{
+            border-bottom: 1rpx solid #EBEBEB ;
+            color: #265CA6;
+            padding: 15rpx;
+            font-weight: 700;
+            font-size: 32rpx;
+            .vvv{
+                margin-right: 20rpx;
+            }
+            .van-dropdown-menu{
+                height: 0rpx;
+            }
+        }
+        .value{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1rpx solid #EBEBEB ;
+            .v{
+                width: 33%;
+                text-align: center;
+                padding: 15rpx 0rpx;
+                .vv{
+                    font-weight: 700;
+                }
+            }
+            .vvv{
+                border-right: 1rpx solid #EBEBEB ;
+            }
+            .v1{
+                flex: 1;
+                text-align: center;
+                display: flex;
+              
+                justify-content: space-between;
+                padding: 20rpx 50rpx;
+                .vvvv{
+                    // width: 50%;
+                    .vv{
+                        font-weight: 700;
+                    }
+                }
+                
+            }
+        }
+        .itme{
+            padding: 20rpx ;
+        }
+        .tebleClor{
+            .tableBox{
+                display: flex;
+                padding: 20rpx;
+                border-bottom: 1rpx solid #EBEBEB ;
+                font-size: 25rpx;
+                view{
+                   
+                    flex: 1;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .button{
+        text-align: center;
+        padding: 60rpx;
+        .buttonv{
+            margin-right: 50rpx;
+             margin-left: 50rpx;
+        }
+    }
+    
+   .scroll-view_H{
+    background-color: #fff;
+    width: 100%;
+
+    .t_{
+        display: flex;
+
+       
+        width: 100%;
+        font-size: 25rpx;
+        .left11{
+            text-align: center;
+            min-width:70rpx;
+            padding-top: 25%;
+            border-bottom: 1rpx solid #999;
+
+            // background-color: blue;
+        }
+        .rigth{
+             width:1000px;
+
+            //  background-color: red;
+            //  flex: 1;
+            border-bottom: 1rpx solid #999;
+             padding-top: 10rpx;
+             .rr{
+                margin-bottom: 30rpx;
+             }
+             .ni{
+                  margin-bottom: 5rpx; 
+             }
+             .title{
+                 display: flex;
+                 .one{
+                    width: 100rpx;
+                    //  background-color: red;
+                     margin-right: 20rpx;
+                      text-align: center;
+                 }
+                 .two{
+                     width: 100rpx;
+                    //  background-color: red;
+                     margin-right: 20rpx;
+                     text-align: center;
+                 }
+             }
+        }
+    }
+}
+
+
+
+
+}

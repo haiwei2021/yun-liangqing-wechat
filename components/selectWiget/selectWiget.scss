@@ -1,0 +1,14 @@
+.selectWiget{
+    display: flex;
+    background-color: blue;
+   
+    .van-dropdown-menu{
+        background-color: blue;
+        .van-ellipsis{
+            color: #fff;
+        }
+        .van-dropdown-menu__title:after{
+            color: #fff;
+        }
+    }
+}

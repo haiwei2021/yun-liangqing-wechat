@@ -1,0 +1,114 @@
+<view class="card" bindtap='handleClick'>
+
+
+    <view class="title">
+        <view>
+            <van-icon name="wap-home" color='#297BB7' size='20' />
+            {{item.houseName}}
+        </view>
+        <view>
+            {{item.houseType}}
+        </view>
+        <view>
+            <!-- <van-tag plain type="success" round>状态：安全</van-tag> -->
+            <van-tag plain type="{{item.statusName=='预警'?'danger':'success'}} " round>{{item.statusName}}</van-tag>
+        </view>
+
+    </view>
+
+    <view class="value">
+        <view class="v">
+            <view class="name">
+                最高温
+            </view>
+            <view class="v_" style="color:#A8242F">
+                {{item.maxVal}}
+            </view>
+
+        </view>
+        <view class="v">
+            <view class="name">
+                最低温
+            </view>
+            <view class="v_" style="color:#3771B0">
+                {{item.minVal}}
+            </view>
+
+        </view>
+        <view class="v">
+            <view class="name">
+                平均温
+            </view>
+            <view class="v_" style="color:#2F9B77">
+                {{item.averageVal}}
+            </view>
+
+        </view>
+
+
+
+
+
+    </view>
+
+    <view class="time">
+        检查时间：{{item.createStamp}}
+    </view>
+
+    <!-- <view class="button">
+        <van-button icon="cluster" type="default" size='mini'>三维图</van-button>
+        <van-button icon="wap-nav" type="default" size='mini'>三温图</van-button>
+        <van-button icon="chart-trending-o" type="default" size='mini'>变价</van-button>
+    </view> -->
+
+
+
+    <!-- <view class="title">
+        <view class="left">
+            报警
+        </view>
+        <view class="rigth">
+            <view class="rigth_top s">
+                <view class="value">
+                    实时温度：9.2℃
+                </view>
+                <view class="type">
+                    未处理
+                </view>
+            </view>
+            <view class="rigth_bottom s">
+                <view class="time">
+                    2021-09-18 16:33
+                </view>
+                <view class="time_">
+                    已持续99天99小时99分
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="name">
+        <view class="key">
+            仓库名称：
+        </view>
+        <view class="value">
+            一号楼1号冷库22你好这个姿势测试文案的
+        </view>
+
+
+    </view>
+
+
+    <view class="location name">
+        <view class="key">
+            位置名称：
+        </view>
+        <view class="value">
+            1号冷库01号测点
+        </view>
+
+    </view>
+    <view class="button" catchtap="startHandle" data-item="{{item}}">
+        开始处理
+    </view> -->
+
+</view>
